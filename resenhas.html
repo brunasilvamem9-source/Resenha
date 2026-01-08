@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenhas - Biblioteca</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/book.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="custom-nav">
+        <div class="max-width-container nav-flex">
+            <div class="logo font-lora">✦ Biblioteca</div>
+            <div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="resenhas.html" class="dropbtn active-link">Resenhas ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#grid-section">Destaques</a>
+                        <a href="#tabela-section">Notas</a>
+                    </div>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Guilda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="max-width-container" style="margin-top: 2rem;">
+        <h1 class="section-title">Últimas Leituras</h1>
+
+        <div class="author-bio clearfix">
+            <img src="img/arte_fadas.jpg" alt="Fada Leitora"
+                style="float: left; margin-right: 20px; width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #d4af37;">
+            <p>
+                <strong>Diário da Arquivista:</strong><br>
+                Esta semana mergulhamos em intrigas da corte e guerras mágicas.
+                <br><em>"Afie sua espada e prepare seu coração."</em>
+            </p>
+        </div>
+
+        <h2 id="grid-section">Destaques da Estante</h2>
+        <div class="book-grid-container">
+            <div class="grid-card">
+                <div style="height: 350px; overflow: hidden; border-bottom: 2px solid #d4af37;">
+                    <img src="img/capa_coroa.jpg" alt="Capa A Coroa de Ossos Dourados" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px;">
+                    <h3>A Coroa de Ossos Dourados</h3>
+                    <p>O destino de Poppy nunca foi tão incerto.</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div style="height: 350px; overflow: hidden; border-bottom: 2px solid #d4af37;">
+                    <img src="img/capa_carne_fogo.jpg" alt="Capa Reino" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px;">
+                    <h3>Um Reino de Carne e Fogo</h3>
+                    <p>Traições e alianças improváveis.</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div style="height: 350px; overflow: hidden; border-bottom: 2px solid #d4af37;">
+                    <img src="img/capa_espada.jpg" alt="Capa Espada" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px;">
+                    <h3>Espada de Vidro</h3>
+                    <p>O preço da revolução é alto.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="tabela-section">Ranking de Notas</h2>
+        <table class="rpg-table">
+            <thead>
+                <tr>
+                    <th>Livro</th>
+                    <th>Autor(a)</th>
+                    <th>Nota (0-10)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>A Rainha do Nada</td><td>Holly Black</td><td>10.0</td></tr>
+                <tr><td>De Sangue e Cinzas</td><td>Jennifer L. A.</td><td>9.5</td></tr>
+                <tr><td>A Rainha Vermelha</td><td>Victoria Aveyard</td><td>8.5</td></tr>
+            </tbody>
+        </table>
+
+        <div class="ad-space">
+            <p>Conheça mais sobre os autores:</p>
+            <iframe src="https://pt.wikipedia.org/wiki/Holly_Black" width="100%" height="200" style="border: 2px dashed #d4af37;"></iframe>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #d4af37;">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <p>Estrela da Leitura</p>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

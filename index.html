@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Reino da Fantasia</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/book.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-fantasy">
+
+    <nav class="custom-nav">
+        <div class="max-width-container nav-flex">
+            <div class="logo font-lora">✦ Reino da Fantasia</div>
+            
+            <div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" style="color: #d4af37;">Início</a></li>
+                
+                <li class="dropdown">
+                    <a href="resenhas.html" class="dropbtn">Resenhas ▾</a>
+                    <div class="dropdown-content">
+                        <a href="resenhas.html#grid-section">Destaques</a>
+                        <a href="resenhas.html#tabela-section">Notas</a>
+                    </div>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Guilda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4 mb-4">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel"
+            style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/capa_rainha.jpg" class="d-block w-100" alt="Capa A Rainha do Nada" style="height: 500px; object-fit: cover; object-position: top;">
+                    <div class="carousel-caption d-none d-md-block bg-dark-transparent">
+                        <h5>A Rainha do Nada</h5>
+                        <p>O desfecho épico da trilogia do Povo do Ar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/capa_espada.jpg" class="d-block w-100" alt="Capa Espada de Vidro" style="height: 500px; object-fit: cover; object-position: top;">
+                    <div class="carousel-caption d-none d-md-block bg-dark-transparent">
+                        <h5>Espada de Vidro</h5>
+                        <p>A rebelião continua.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fundo_espada.jpg" class="d-block w-100" alt="Espada" style="height: 500px; object-fit: cover; object-position: center;">
+                    <div class="carousel-caption d-none d-md-block bg-dark-transparent">
+                        <h5>Resenhas Épicas</h5>
+                        <p>Mergulhe nas histórias.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="font-lora text-gold">Bem-vindo, Leitor</h1>
+                <p style="font-size: 1.1rem;">
+                    Nossa biblioteca acaba de receber novas obras. Confira as análises de <strong>Holly Black</strong> e
+                    <strong>Victoria Aveyard</strong>.
+                </p>
+                <button onclick="ativarModoMagia()" class="btn btn-gold mt-3">✨ Ativar Modo Magia</button>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="img/arte_borboletas.jpg" alt="Livro Mágico"
+                    style="width: 100%; max-width: 250px; border-radius: 10px; border: 3px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h2 class="font-lora mb-4">BookTrailer da Semana</h2>
+                <div class="ratio ratio-16x9 border-gold-thick">
+                    <iframe src="https://www.youtube.com/embed/vOZphmOLDm0?si=o3N8wxACrkdcJpmx" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

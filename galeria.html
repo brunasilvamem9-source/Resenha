@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Artes e Capas</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/book.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="custom-nav">
+        <div class="max-width-container nav-flex">
+            <div class="logo font-lora">✦ Acervo Visual</div>
+            <div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="resenhas.html">Resenhas</a></li>
+                <li><a href="galeria.html" class="active-link" style="color: #d4af37;">Galeria</a></li>
+                <li><a href="contato.html">Guilda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="max-width-container">
+        <div class="intro-gallery">
+            <h1 class="section-title">Artefatos e Capas</h1>
+            <p>Detalhes visuais que enriquecem nossas leituras.</p>
+        </div>
+
+        <div class="gallery-container">
+            
+            <div class="gallery-item">
+                <img src="img/fundo_espada.jpg" alt="Espada Real">
+                <div class="gallery-caption">
+                    <h3>A Espada Real</h3>
+                    <p>Símbolo de poder e traição.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/arte_borboletas.jpg" alt="Livro Mágico">
+                <div class="gallery-caption">
+                    <h3>Magia Antiga</h3>
+                    <p>Conhecimento proibido das fadas.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/arte_rosa.jpg" alt="Rosa Azul">
+                <div class="gallery-caption">
+                    <h3>Rosa de Inverno</h3>
+                    <p>Beleza rara e perigosa.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/arte_fadas.jpg" alt="Mundo Feérico">
+                <div class="gallery-caption">
+                    <h3>Reino das Fadas</h3>
+                    <p>Onde nada é o que parece.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="img/capa_rainha.jpg" alt="Capa Rainha do Nada">
+                <div class="gallery-caption">
+                    <h3>Edição Especial</h3>
+                    <p>Capa oficial da trilogia.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
