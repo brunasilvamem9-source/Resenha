@@ -44,31 +44,33 @@
 
         <h2 id="grid-section">Destaques da Estante</h2>
         <div class="book-grid-container">
-            <div class="grid-card">
+            <div class="grid-card" onclick="abrirResenha('livro1')" style="cursor: pointer;">
                 <div style="height: 350px; overflow: hidden; border-bottom: 2px solid #d4af37;">
                     <img src="img/capa_coroa.jpg" alt="Capa A Coroa de Ossos Dourados" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div style="padding: 15px;">
                     <h3>A Coroa de Ossos Dourados</h3>
-                    <p>O destino de Poppy nunca foi tão incerto.</p>
+                    <p>Clique para ler a resenha completa.</p>
                 </div>
             </div>
-            <div class="grid-card">
+
+            <div class="grid-card" onclick="abrirResenha('livro2')" style="cursor: pointer;">
                 <div style="height: 350px; overflow: hidden; border-bottom: 2px solid #d4af37;">
                     <img src="img/capa_carne_fogo.jpg" alt="Capa Reino" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div style="padding: 15px;">
                     <h3>Um Reino de Carne e Fogo</h3>
-                    <p>Traições e alianças improváveis.</p>
+                    <p>Clique para ler a resenha completa.</p>
                 </div>
             </div>
-            <div class="grid-card">
+
+            <div class="grid-card" onclick="abrirResenha('livro3')" style="cursor: pointer;">
                 <div style="height: 350px; overflow: hidden; border-bottom: 2px solid #d4af37;">
                     <img src="img/capa_espada.jpg" alt="Capa Espada" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div style="padding: 15px;">
                     <h3>Espada de Vidro</h3>
-                    <p>O preço da revolução é alto.</p>
+                    <p>Clique para ler a resenha completa.</p>
                 </div>
             </div>
         </div>
@@ -101,6 +103,19 @@
             <p>Estrela da Leitura</p>
         </div>
     </main>
+
+    <div id="modalResenha" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharResenha()">&times;</span>
+            <h2 id="modalTitulo" class="font-lora" style="color: #155e37;">Titulo do Livro</h2>
+            <hr style="border-color: #d4af37;">
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Capa Grande" class="modal-img">
+                <div id="modalTexto" class="modal-text">
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
