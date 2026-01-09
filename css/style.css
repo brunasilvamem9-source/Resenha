@@ -9,10 +9,10 @@
 
 /* --- MODO NOTURNO --- */
 body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --primary-green: #0a2e1b;
-    --white: #1e1e1e;
+    --bg-color: #080c0a;
+    --text-color: #c4c4c4;
+    --primary-green: #0d3a22;
+    --white: #141816;
 }
 
 /* GERAL */
@@ -219,7 +219,7 @@ body {
     .nav-links li { margin: 15px 0; }
     .nav-flex { flex-wrap: wrap; }
     .dropdown:hover .dropdown-content { position: relative; box-shadow: none; }
-}
+} /* <--- FALTAVA FECHAR ESTA CHAVE AQUI ANTES! AGORA ESTÁ CERTO */
 
 /* --- MODAL DE RESENHA (Janela Flutuante) --- */
 .modal {
@@ -236,7 +236,7 @@ body {
 }
 
 .modal-content {
-    background-color: var(--bg-color); 
+    background-color: var(--bg-color);
     color: var(--text-color);
     margin: 10% auto; 
     padding: 20px;
@@ -247,6 +247,29 @@ body {
     position: relative;
     box-shadow: 0 0 20px var(--accent-gold); 
     animation: abrirPergaminho 0.5s ease-out;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 25px; 
+}
+
+.modal-img {
+    width: 200px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 5px; 
+    border: 2px solid var(--primary-green);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.modal-text {
+    width: 100%;
+    text-align: left;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 @keyframes abrirPergaminho {
@@ -263,10 +286,3 @@ body {
     transition: 0.3s;
 }
 .close-btn:hover { color: #b30000; }
-
-.modal-body { display: flex; flex-wrap: wrap; gap: 20px; }
-.modal-img {
-    width: 200px; height: 300px; object-fit: cover;
-    border-radius: 5px; border: 2px solid var(--primary-green);
-}
-.modal-text { flex: 1; text-align: left; }
